@@ -61,9 +61,9 @@ const { ind } = require('./language')
 /********** MENU SETTING **********/
 const vcard = 'BEGIN:VCARD\n' //JANGAN DI GANTI
             + 'VERSION:3.0\n' //JANGAN DI GANTI
-            + 'FN:Owner Elaina\n' //GANTI NAMA LUH
-            + 'ORG: Pengembang ElainaBot-X;\n' //GANTI NAMA BOT LUH
-            + 'TEL;type=CELL;type=VOICE;waid=6281534162316:+62 815-3416-2316\n' // GANTI NOMOR LUH,TAPI JANGAN DIUBAH POLANYA
+            + 'FN:Kenma•Kun\n' //GANTI NAMA LUH
+            + 'ORG: Kenma•Bot;\n' //GANTI NAMA BOT LUH
+            + 'TEL;type=CELL;type=VOICE;waid=6281216563395:+62 812-1656-3395\n' // GANTI NOMOR LUH,TAPI JANGAN DIUBAH POLANYA
             + 'END:VCARD' //JANGAN DI GANTI
 blocked = []   
 prefix = '#'
@@ -71,11 +71,11 @@ limitawal = 30
 memberlimit = 0
 ator = 'SUBSCRIBE'
 namo = 'MrG{108P}*'
-cr = '*Subscribe:MrG{108P}🍁*'//TERSERAH MAU GANTI ATAU KAGAK
+cr = '*Subscribe:Kenma Kun Official*'//TERSERAH MAU GANTI ATAU KAGAK
 /*************************************/
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["6281534162316@s.whatsapp.net"] //GANTI NOMOR LUH
+const ownerNumber = ["6283856061828@s.whatsapp.net"] //GANTI NOMOR LUH
 /************************************/
 
        
@@ -758,30 +758,54 @@ client.on('group-participants-update', async (anu) => {
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			
 			switch(command) { 
-				case 'sound1':
-
-satu = fs.readFileSync('./assets/sound1.mp3');
-
-client.sendMessage(from, satu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound2':
-
-dua = fs.readFileSync('./assets/sound2.mp3');
-
-client.sendMessage(from, dua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound3':
-
-tiga = fs.readFileSync('./assets/sound3.mp3');
-
-client.sendMessage(from, tiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
+				case 'sound1':
+
+
+
+satu = fs.readFileSync('./assets/sound1.mp3');
+
+
+
+client.sendMessage(from, satu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound2':
+
+
+
+dua = fs.readFileSync('./assets/sound2.mp3');
+
+
+
+client.sendMessage(from, dua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound3':
+
+
+
+tiga = fs.readFileSync('./assets/sound3.mp3');
+
+
+
+client.sendMessage(from, tiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
 case 'sound4':
 
 empat = fs.readFileSync('./assets/sound4.mp3');
@@ -798,447 +822,888 @@ baby.sendMessage(from, lima, MessageType.audio, {quoted: mek, mimetype: 'audio/m
 
 break
 
-case 'sound6':
-
-enam = fs.readFileSync('./assets/sound6.mp3');
-
-client.sendMessage(from, enam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound7':
-
-if (!isPrem) return reply(ind.premium())
-tujuh = fs.readFileSync('./assets/sound7.mp3');
-
-client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound8':
-
-delapan = fs.readFileSync('./assets/sound8.mp3');
-
-client.sendMessage(from, delapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound9':
-
-sembilan = fs.readFileSync('./assets/sound9.mp3');
-
-client.sendMessage(from, sembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound10':
-
-sepuluh = fs.readFileSync('./assets/sound10.mp3');
-
-client.sendMessage(from, sepuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-
-
-case 'sound11':
-
-sebelas = fs.readFileSync('./assets/sound11.m4a');
-
-client.sendMessage(from, sebelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-
-
-case 'sound12':
-
-
-
-duabelas = fs.readFileSync('./assets/sound12.mp3');
-
-client.sendMessage(from, duabelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-
-
-
-
-case 'sound13':
-
-tigabelas = fs.readFileSync('./assets/sound13.mp3');
-
-client.sendMessage(from, tigabelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-
-
-
-
-case 'sound14':
-
-empatbelas = fs.readFileSync('./assets/sound14.mp3');
-
-client.sendMessage(from, empatbelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound15':
-
-limabelas = fs.readFileSync('./assets/sound15.mp3');
-
-client.sendMessage(from, limabelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound16':
-
-
-
-enambelas = fs.readFileSync('./assets/sound16.mp3');
-
-
-
-client.sendMessage(from, enambelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound17':
-
-tujuhbelas = fs.readFileSync('./assets/sound17.mp3');
-
-client.sendMessage(from, tujuhbelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound18':
-
-delapanbelas = fs.readFileSync('./assets/sound18.mp3');
-
-client.sendMessage(from, delapanbelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound19':
-
-sembilanbelas = fs.readFileSync('./assets/sound19.mp3');
-
-client.sendMessage(from, sembilanbelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound20':
-
-duapuluh = fs.readFileSync('./assets/sound20.mp3');
-
-client.sendMessage(from, duapuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound21':
-
-
-
-duasatu = fs.readFileSync('./assets/sound21.mp3');
-
-
-
-client.sendMessage(from, duasatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound22':
-
-duadua = fs.readFileSync('./assets/sound22.mp3');
-
-client.sendMessage(from, duadua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound23':
-
-duatiga = fs.readFileSync('./assets/sound23.m4a');
-
-client.sendMessage(from, duatiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound24':
-
-duaempat = fs.readFileSync('./assets/sound24.mp3');
-
-client.sendMessage(from, duaempat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound25':
-
-dualima = fs.readFileSync('./assets/sound25.mp3');
-
-client.sendMessage(from, dualima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound26':
-
-duaenam = fs.readFileSync('./assets/sound26.m4a');
-
-client.sendMessage(from, duaenam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound27':
-
-duatujuh = fs.readFileSync('./assets/sound27.mp3');
-
-client.sendMessage(from, duatujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound28':
-
-duadelapan = fs.readFileSync('./assets/sound28.mp3');
-
-client.sendMessage(from, duadelapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound29':
-
-duasembilan = fs.readFileSync('./assets/sound29.mp3');
-
-client.sendMessage(from, duasembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound30':
-
-tigapuluh = fs.readFileSync('./assets/sound30.mp3');
-
-client.sendMessage(from, tigapuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound31':
-
-tigasatu = fs.readFileSync('./assets/sound31.mp3');
-
-client.sendMessage(from, tigasatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound32':
-
-
-
-tigadua = fs.readFileSync('./assets/sound32.mp3');
-
-
-
-client.sendMessage(from, tigadua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound33':
-
-tigatiga = fs.readFileSync('./assets/sound33.mp3');
-
-client.sendMessage(from, tigatiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound34':
-
-tigaempat = fs.readFileSync('./assets/sound34.mp3');
-
-client.sendMessage(from, tigaempat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound35':
-
-tigalima = fs.readFileSync('./assets/sound35.mp3');
-
-client.sendMessage(from, tigalima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound36':
-
-tigaenam = fs.readFileSync('./assets/sound36.mp3');
-
-client.sendMessage(from, tigaenam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound37':
-
-tigatujuh = fs.readFileSync('./assets/sound37.mp3');
-
-client.sendMessage(from, tigatujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound38':
-
-tigadelapan = fs.readFileSync('./assets/sound38.mp3');
-
-client.sendMessage(from, tigadelapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound39':
-
-tigasembilan = fs.readFileSync('./assets/sound39.mp3');
-
-client.sendMessage(from, tigasembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound40':
-
-empatpuluh = fs.readFileSync('./assets/sound40.mp3');
-
-client.sendMessage(from, empatpuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound41':
-
-empatsatu = fs.readFileSync('./assets/sound41.mp3');
-
-client.sendMessage(from, empatsatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound42':
-
-empatdua = fs.readFileSync('./assets/sound42.mp3');
-
-client.sendMessage(from, empatdua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound43':
-
-empattiga = fs.readFileSync('./assets/sound43.mp3');
-
-client.sendMessage(from, empattiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound44':
-
-empatempat = fs.readFileSync('./assets/sound44.mp3');
-
-client.sendMessage(from, empatempat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound45':
-
-empatlima = fs.readFileSync('./assets/sound45.mp3');
-
-client.sendMessage(from, empatlima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound46':
-
-empatenam = fs.readFileSync('./assets/sound46.mp3');
-
-client.sendMessage(from, empatenam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound47':
-
-empattujuh = fs.readFileSync('./assets/sound47.mp3');
-
-client.sendMessage(from, empattujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound48':
-
-empatdelapan = fs.readFileSync('./assets/sound48.mp3');
-
-client.sendMessage(from, empatdelapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound49':
-
-empatsembilan = fs.readFileSync('./assets/sound49.mp3');
-
-client.sendMessage(from, empatsembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sound50':
-
-limapuluh = fs.readFileSync('./assets/sound50.mp3');
-
-client.sendMessage(from, limapuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'bernyanyi':
-
-const bernyanyi = fs.readFileSync('./assets/bernyanyi.mp3');
-
-client.sendMessage(from, bernyanyi, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'kebenaran':
-
-const kebenaran = fs.readFileSync('./assets/kebenaran.mp3');
-
-client.sendMessage(from, kebenaran, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sad':
-
-const sad = fs.readFileSync('./assets/sad.mp3');
-
-client.sendMessage(from, sad, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sad2':
-
-const sad1 = fs.readFileSync('./assets/sad1.mp3');
-
-client.sendMessage(from, sad1, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'sad3':
-
-const sad3 = fs.readFileSync('./assets/sad3.mp3');
-
-client.sendMessage(from, sad3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'iri':
-
-const irimp3 = fs.readFileSync('./assets/iri.mp3');
-
-client.sendMessage(from, irimp3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
-break
-
-case 'pale':
-
-const pa = fs.readFileSync('assets/pale.mp3')
-
-client.sendMessage(from, pa, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-
+case 'sound6':
+
+
+
+enam = fs.readFileSync('./assets/sound6.mp3');
+
+
+
+client.sendMessage(from, enam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound7':
+
+
+
+if (!isPrem) return reply(ind.premium())
+
+tujuh = fs.readFileSync('./assets/sound7.mp3');
+
+
+
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound8':
+
+
+
+delapan = fs.readFileSync('./assets/sound8.mp3');
+
+
+
+client.sendMessage(from, delapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound9':
+
+
+
+sembilan = fs.readFileSync('./assets/sound9.mp3');
+
+
+
+client.sendMessage(from, sembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound10':
+
+
+
+sepuluh = fs.readFileSync('./assets/sound10.mp3');
+
+
+
+client.sendMessage(from, sepuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+
+
+
+
+case 'sound11':
+
+
+
+sebelas = fs.readFileSync('./assets/sound11.m4a');
+
+
+
+client.sendMessage(from, sebelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+
+
+
+
+case 'sound12':
+
+
+
+
+
+
+
+duabelas = fs.readFileSync('./assets/sound12.mp3');
+
+
+
+client.sendMessage(from, duabelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+
+
+
+
+
+
+
+
+case 'sound13':
+
+
+
+tigabelas = fs.readFileSync('./assets/sound13.mp3');
+
+
+
+client.sendMessage(from, tigabelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+
+
+
+
+
+
+
+
+case 'sound14':
+
+
+
+empatbelas = fs.readFileSync('./assets/sound14.mp3');
+
+
+
+client.sendMessage(from, empatbelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound15':
+
+
+
+limabelas = fs.readFileSync('./assets/sound15.mp3');
+
+
+
+client.sendMessage(from, limabelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound16':
+
+
+
+
+
+
+
+enambelas = fs.readFileSync('./assets/sound16.mp3');
+
+
+
+
+
+
+
+client.sendMessage(from, enambelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound17':
+
+
+
+tujuhbelas = fs.readFileSync('./assets/sound17.mp3');
+
+
+
+client.sendMessage(from, tujuhbelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound18':
+
+
+
+delapanbelas = fs.readFileSync('./assets/sound18.mp3');
+
+
+
+client.sendMessage(from, delapanbelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound19':
+
+
+
+sembilanbelas = fs.readFileSync('./assets/sound19.mp3');
+
+
+
+client.sendMessage(from, sembilanbelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound20':
+
+
+
+duapuluh = fs.readFileSync('./assets/sound20.mp3');
+
+
+
+client.sendMessage(from, duapuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound21':
+
+
+
+
+
+
+
+duasatu = fs.readFileSync('./assets/sound21.mp3');
+
+
+
+
+
+
+
+client.sendMessage(from, duasatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound22':
+
+
+
+duadua = fs.readFileSync('./assets/sound22.mp3');
+
+
+
+client.sendMessage(from, duadua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound23':
+
+
+
+duatiga = fs.readFileSync('./assets/sound23.m4a');
+
+
+
+client.sendMessage(from, duatiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound24':
+
+
+
+duaempat = fs.readFileSync('./assets/sound24.mp3');
+
+
+
+client.sendMessage(from, duaempat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound25':
+
+
+
+dualima = fs.readFileSync('./assets/sound25.mp3');
+
+
+
+client.sendMessage(from, dualima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound26':
+
+
+
+duaenam = fs.readFileSync('./assets/sound26.m4a');
+
+
+
+client.sendMessage(from, duaenam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound27':
+
+
+
+duatujuh = fs.readFileSync('./assets/sound27.mp3');
+
+
+
+client.sendMessage(from, duatujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound28':
+
+
+
+duadelapan = fs.readFileSync('./assets/sound28.mp3');
+
+
+
+client.sendMessage(from, duadelapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound29':
+
+
+
+duasembilan = fs.readFileSync('./assets/sound29.mp3');
+
+
+
+client.sendMessage(from, duasembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound30':
+
+
+
+tigapuluh = fs.readFileSync('./assets/sound30.mp3');
+
+
+
+client.sendMessage(from, tigapuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound31':
+
+
+
+tigasatu = fs.readFileSync('./assets/sound31.mp3');
+
+
+
+client.sendMessage(from, tigasatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound32':
+
+
+
+
+
+
+
+tigadua = fs.readFileSync('./assets/sound32.mp3');
+
+
+
+
+
+
+
+client.sendMessage(from, tigadua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound33':
+
+
+
+tigatiga = fs.readFileSync('./assets/sound33.mp3');
+
+
+
+client.sendMessage(from, tigatiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound34':
+
+
+
+tigaempat = fs.readFileSync('./assets/sound34.mp3');
+
+
+
+client.sendMessage(from, tigaempat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound35':
+
+
+
+tigalima = fs.readFileSync('./assets/sound35.mp3');
+
+
+
+client.sendMessage(from, tigalima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound36':
+
+
+
+tigaenam = fs.readFileSync('./assets/sound36.mp3');
+
+
+
+client.sendMessage(from, tigaenam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound37':
+
+
+
+tigatujuh = fs.readFileSync('./assets/sound37.mp3');
+
+
+
+client.sendMessage(from, tigatujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound38':
+
+
+
+tigadelapan = fs.readFileSync('./assets/sound38.mp3');
+
+
+
+client.sendMessage(from, tigadelapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound39':
+
+
+
+tigasembilan = fs.readFileSync('./assets/sound39.mp3');
+
+
+
+client.sendMessage(from, tigasembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound40':
+
+
+
+empatpuluh = fs.readFileSync('./assets/sound40.mp3');
+
+
+
+client.sendMessage(from, empatpuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound41':
+
+
+
+empatsatu = fs.readFileSync('./assets/sound41.mp3');
+
+
+
+client.sendMessage(from, empatsatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound42':
+
+
+
+empatdua = fs.readFileSync('./assets/sound42.mp3');
+
+
+
+client.sendMessage(from, empatdua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound43':
+
+
+
+empattiga = fs.readFileSync('./assets/sound43.mp3');
+
+
+
+client.sendMessage(from, empattiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound44':
+
+
+
+empatempat = fs.readFileSync('./assets/sound44.mp3');
+
+
+
+client.sendMessage(from, empatempat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound45':
+
+
+
+empatlima = fs.readFileSync('./assets/sound45.mp3');
+
+
+
+client.sendMessage(from, empatlima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound46':
+
+
+
+empatenam = fs.readFileSync('./assets/sound46.mp3');
+
+
+
+client.sendMessage(from, empatenam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound47':
+
+
+
+empattujuh = fs.readFileSync('./assets/sound47.mp3');
+
+
+
+client.sendMessage(from, empattujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound48':
+
+
+
+empatdelapan = fs.readFileSync('./assets/sound48.mp3');
+
+
+
+client.sendMessage(from, empatdelapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound49':
+
+
+
+empatsembilan = fs.readFileSync('./assets/sound49.mp3');
+
+
+
+client.sendMessage(from, empatsembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sound50':
+
+
+
+limapuluh = fs.readFileSync('./assets/sound50.mp3');
+
+
+
+client.sendMessage(from, limapuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'bernyanyi':
+
+
+
+const bernyanyi = fs.readFileSync('./assets/bernyanyi.mp3');
+
+
+
+client.sendMessage(from, bernyanyi, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'kebenaran':
+
+
+
+const kebenaran = fs.readFileSync('./assets/kebenaran.mp3');
+
+
+
+client.sendMessage(from, kebenaran, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sad':
+
+
+
+const sad = fs.readFileSync('./assets/sad.mp3');
+
+
+
+client.sendMessage(from, sad, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sad2':
+
+
+
+const sad1 = fs.readFileSync('./assets/sad1.mp3');
+
+
+
+client.sendMessage(from, sad1, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'sad3':
+
+
+
+const sad3 = fs.readFileSync('./assets/sad3.mp3');
+
+
+
+client.sendMessage(from, sad3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'iri':
+
+
+
+const irimp3 = fs.readFileSync('./assets/iri.mp3');
+
+
+
+client.sendMessage(from, irimp3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
+break
+
+
+
+case 'pale':
+
+
+
+const pa = fs.readFileSync('assets/pale.mp3')
+
+
+
+client.sendMessage(from, pa, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+
+
 break
 				//apivinz 
 				case 'tebakgambar':
