@@ -2668,7 +2668,7 @@ break
 				    const reqXp  = 5000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
 logo = fs.readFileSync(`./assets/pkg.jpg`)
 				    const uangku = checkATMuser(sender)
-shiz = `┌──「 *Elaina Bot -X* 」
+shiz = `┌──「 *Kenma•Bot* 」
 ├*Nama : ${pushname}*
 ├*Premium :* ${premi}*
 ├*Nomer : wa.me/${sender.split("@")[0]}*
@@ -2928,11 +2928,11 @@ shiz = `┌──「 *Elaina Bot -X* 」
 │
 ├「 *TQTO* 」
 │
-├ MrG{108P}*
-├ Sofyan AMV
-├ Mr.A43G
-├ Arashi~
-└──「 *Elaina Bot-X* 」
+├ Kenma•Kun
+├ Agil-Media
+├ Youtube
+├ MPG
+└──「 *Kenma•Bot* 」
 `
 client.sendMessage(from, logo, image, { quoted: mek, caption: shiz })
 const menu2 = fs.readFileSync('./assets/menu2.mp3');
